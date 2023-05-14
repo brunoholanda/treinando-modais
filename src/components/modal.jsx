@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const BACKGROUND_STYLE = {
   position: 'fixed',
   top: '0',
