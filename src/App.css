@@ -17,6 +17,11 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.img_modal img {
+  width: 400px;
+  height: 400px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

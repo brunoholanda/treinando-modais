@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 import Modal from './components/modal'
+import qr from '../src/components/qr-pix.jpg';
 
 function App() {
   const [openModal, setOpenModal] = useState(false)
@@ -14,7 +15,10 @@ function App() {
         <button onClick={() => setOpenModal2(true)}>Abrir o modal 2</button>
       </div>
       <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
-        Conteúdo do modal
+        <div className='img_modal'>
+          <img src={qr} alt="qr code pix" />
+          <p>Se preferir transfira para (83) 98150712</p>
+        </div>
       </Modal>
       <Modal
         isOpen={openModal2}
